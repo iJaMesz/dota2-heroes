@@ -15,7 +15,7 @@ class App extends Component {
     const filteredHeroes = searchField ? heroes.filter(h => h.name.toLowerCase().includes(searchField.toLowerCase())) : heroes;
     return (
       <div className="App">
-        <input type="search" placeholder="Search for a Hero" onChange={e => this.setState({searchField: e.target.value}, () => console.log(e.target.value))}></input>
+        <input type="search" placeholder="Search for a Hero" onChange={e => this.setState({searchField: e.target.value})}></input>
         <CardList heroes={filteredHeroes}></CardList>
       </div>
     );
