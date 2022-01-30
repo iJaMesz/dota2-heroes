@@ -21,6 +21,7 @@ class App extends Component {
     const filteredHeroes = searchField ? heroes.filter(h => h.name.toLowerCase().includes(searchField.toLowerCase())) : heroes;
     return (
       <div className="App">
+        <h1>DotA2 Heroes</h1>
         <SearchBox placeholder='Search for Heroes' handleChange={this.handleChange}></SearchBox>
         <CardList heroes={filteredHeroes}></CardList>
       </div>
