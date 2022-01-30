@@ -46,3 +46,7 @@ h1 {
   font-size: 72px;
   color: #0ccac4;
 }
+
+#filters {
+  padding-bottom: 1em;
+}
